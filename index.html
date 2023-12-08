@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Usama BookStore</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <h1>BookStore</h1>
-        <div style="display: flex; gap: 15px">
-            <a href="" class="nav-link">Home</a href="">
-            <a href="" class="nav-link">All Books</a href="">
-        </div>
-        <div>
-            <a href="" class="nav-link">About</a href="">
-        </div>
+      <h1><a style="text-decoration: none" href="/">BookStore</a></h1>
+      <div style="display: flex; gap: 15px">
+        <a href="#" class="nav-link" id="home-link">Home</a>
+        <a href="#" class="nav-link" id="all-books-link">All Books</a>
+      </div>
+      <div>
+        <a href="#" class="nav-link" onclick="" id="about-link">About</a>
+      </div>
     </nav>
-    <main></main>
-</body>
+    <main>
+      <div id="welcome-text">
+        <h1>Welcome to the Usama Book Store</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eveniet
+          maiores officiis consequatur id repellendus suscipit sapiente sit
+          debitis? Recusandae quod ab repudiandae omnis nam rem quasi facere aut
+          suscipit odit officia minus distinctio quas labore expedita illum non
+          perferendis, repellendus laboriosam corporis!
+        </p>
+      </div>
 
+      <div id="add-book-section" style="display: none">
+        <h2>Add a New Book</h2>
+        <input type="text" id="title" placeholder="Title" required />
+        <input type="text" id="author" placeholder="Author" required />
+        <input type="text" id="price" placeholder="Price" required />
+        <button onclick="addBook()">Add Book</button>
+      </div>
+
+      <div id="all-books-section" style="display: none"></div>
+
+      <div id="about-us-section" style="display: none">
+        <h1>About Us</h1>
+        <p>
+          Our company, founded by Usama Ali in 1980, is dedicated to providing
+          quality books to readers worldwide. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua.
+        </p>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
