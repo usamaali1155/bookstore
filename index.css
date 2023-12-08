@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: lightgreen;
+    border-bottom: 2px solid black;
+    position: sticky;
+    top: 0px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: larger;
+    color: black;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+main{
+    min-height: 100vh;
+}
