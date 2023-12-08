@@ -1,31 +1,66 @@
 body {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 nav {
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    background-color: lightgreen;
-    border-bottom: 2px solid black;
-    position: sticky;
-    top: 0px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: lightgreen;
+  border-bottom: 2px solid black;
+  position: sticky;
+  top: 0px;
 }
 
 .nav-link {
-    text-decoration: none;
-    font-weight: 700;
-    font-size: larger;
-    color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: larger;
+  color: black;
 }
 
 .nav-link:hover {
-    color: white;
+  color: white;
 }
 
-main{
-    min-height: 100vh;
+main {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#welcome-text {
+  text-align: center;
+  width: 50%;
+}
+
+#all-books-section,
+#add-book-section {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #welcome-text,
+  #all-books-section,
+  #add-book-section,
+  #about-us-section {
+    width: 90%;
+  }
+}
+
+#about-us-section {
+  width: 80%;
+  text-align: center;
 }
